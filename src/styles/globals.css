@@ -1,0 +1,117 @@
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+.parallax-outer {
+  overflow: hidden;
+}
+.parallax {
+  width: 100%;
+  height: 110vh;
+  position: relative;
+}
+
+.parallax img {
+  position: absolute;
+  width: 100%;
+}
+.mountain-4 {
+  top: 0;
+}
+.mountain-3 {
+  top: 40px;
+}
+.mountain-2 {
+  top: 130px;
+}
+.mountain-1 {
+  top: 270px;
+}
+@media (max-width: 1140px) {
+  .mountain-4 {
+    top: 0;
+  }
+  .mountain-3 {
+    top: 30px;
+  }
+  .mountain-2 {
+    top: 85px;
+  }
+  .mountain-1 {
+    top: 175px;
+  }
+}
+@media (max-width: 726px) {
+  .mountain-4 {
+    top: 0;
+  }
+  .mountain-3 {
+    top: 15px;
+  }
+  .mountain-2 {
+    top: 40px;
+  }
+  .mountain-1 {
+    top: 85px;
+  }
+}
+@media (min-width: 1440px) {
+  .mountain-4 {
+    top: 0;
+  }
+  .mountain-3 {
+    top: 60px;
+  }
+  .mountain-2 {
+    top: 175px;
+  }
+  .mountain-1 {
+    top: 350px;
+  }
+}
+@media (min-width: 2440px) {
+  .mountain-4 {
+    top: 0;
+  }
+  .mountain-3 {
+    top: 100px;
+  }
+  .mountain-2 {
+    top: 300px;
+  }
+  .mountain-1 {
+    top: 590px;
+  }
+}
+.copy {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  background: #ffffff;
+  background-clip: text;
+  color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+}
+
+.copy h1 {
+  font-size: 10rem;
+}
+
+.copy span {
+  background-color: #ffffff;
+  color: #7b7676;
+  padding: 1rem;
+  font-weight: 800;
+  border-radius: 0.5rem;
+  opacity: 0;
+}
